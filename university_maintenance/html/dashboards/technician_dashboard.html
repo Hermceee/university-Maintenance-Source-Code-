@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technician Dashboard</title>
+    <link rel="stylesheet" href="../css/technician_dashboard.css">
+</head>
+<body>
+    <header>
+        <img src="../images/UI LOGO.jpeg" alt="University Logo" class="logo">
+        <h1>University of Ibadan Maintenance Department</h1>
+        <a href="../index.html" class="home-button">HOME</a>
+        <a href="../php/logout.php" class="logout-button">LOG OUT</a>
+    </header>
+
+    <main>
+        <h2>Technician Dashboard</h2>
+        <section class="jobs">
+            <h3>Assigned Jobs</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Job ID</th>
+                        <th>Issue Type</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example data -->
+                    <tr>
+                        <td>001</td>
+                        <td>Plumbing</td>
+                        <td>Leaky faucet in lab 101</td>
+                        <td>In Progress</td>
+                        <td>
+                            <a href="../html/submit_report.html?id=001" class="button">Submit Report</a>
+                        </td>
+                    </tr>
+                    <!-- Dynamic content goes here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

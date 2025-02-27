@@ -1,0 +1,296 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: none; /* Removed uppercase transformation from body */
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+	    text-transform: uppercase; /* Capitalize all text */
+
+}
+
+/* Header Styles */
+header {
+    background-color: #002147; /* Deep Blue */
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px; /* Adjusted to match consistency with other CSS files */
+    border-radius: 15px; /* Round all corners */
+    position: sticky; /* Make the header sticky */
+    top: 0;
+    z-index: 1000; /* Ensure it stays above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    height: 50px; /* Adjusted to match other headers */
+    width: auto;
+    cursor: pointer;
+    border-radius: 15px; /* Rounded corners for the logo */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.2;
+    flex-grow: 1; /* Allow header title to expand */
+}
+
+body h2 {
+    margin: 20px; /* Top and bottom margin set to 40px, left and right to 20px */
+    padding: 20px; /* Top and bottom padding set to 20px, no padding on left and right */
+    font-size: 1.5em;
+    text-align: center;
+   
+}
+/* Style for h2 elements */
+h2 {
+    font-size: 2em; /* Set font size */
+    color: #002147; /* Deep Blue color to match the theme */
+    text-align: center; /* Center align the text */
+    margin:-50px 0 -20px; /* Top and bottom margin set to 40px, left and right to 20px */
+    padding: 0px 0px 35px 0px; /* Reduced top padding, increased bottom padding */
+    font-weight: bold; /* Make the text bold */
+    text-transform: uppercase; /* Convert text to uppercase */
+    border-bottom: 2px solid #ddd; /* Optional bottom border for separation */
+}
+
+/* Logout Button Styles */
+header .Menu {
+    background-color: red; /* Red background for logout button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded corners to match button styles in other files */
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+header .Menu:hover {
+    background-color: #f4f4f4; /* Lighter grey on hover */
+    color: red; /* Red text on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 60px; /* Adjusted to match consistency with other main content */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px; /* Adjusted width for better layout */
+    flex: 1;
+    width: 90%; /* Adjusted for proper centering */
+}
+
+
+
+/* Filters Section Styles */
+/* Filters Section Styles */
+.filters {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap; /* Prevent wrapping to keep everything in a single line */
+}
+
+
+/* Input and Select Box Styling */
+#searchInput, #unitFilter, #roleFilter {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 150px;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+#searchButton, #filterButton, .add-user-button {
+    padding: 10px 20px;
+    background-color: #002147; /* Deep Blue */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Increased border radius for rounded buttons */
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase; /* Ensure button text is uppercase */
+}
+
+#searchButton:hover, #filterButton:hover, .add-user-button:hover {
+    background-color: #001f5c; /* Darker blue on hover */
+}
+
+/* Add User Button Styling */
+.add-user-button {
+    background-color: #002147; /* Deep Blue */
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+	    padding: 10px 20px;
+
+}
+
+/* Manage Roles & Units Button Styling */
+.manage-button {
+    padding: 10px 20px;
+    background-color: #002147; /* Deep Blue */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Increased border radius for rounded buttons */
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px; /* Space between buttons */
+}
+
+.manage-button:hover {
+    background-color: #001f5c; /* Darker blue on hover */
+}
+
+.add-user-button:hover {
+    background-color: #001f5c; /* Darker blue on hover */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 20px auto; /* Center the table */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #002147; /* Deep Blue */
+    color: white;
+    text-transform: uppercase; /* Capitalize column headers */
+}
+
+td {
+    background-color: #f4f4f4; /* Light grey background for table cells */
+    text-transform: none; /* Ensure table cell text remains unaffected */
+}
+
+/* Action Column Styling */
+td a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px 10px; /* Added spacing between buttons */
+    border-radius: 25px; /* Rounded corners for consistency */
+    font-size: 0.9em;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Edit Button Styling */
+td a.edit-button {
+    background-color: #28a745; /* Green */
+}
+
+td a.edit-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #002147; /* Deep Blue */
+    color: white;
+    text-align: center;
+    padding: 10px 20px; /* Adjusted padding for better fit */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Set height for consistency */
+    font-size: 0.9em;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border-radius: 15px; /* Round all corners */
+}
+.view-button {
+    background-color: #17a2b8; /* Light blue */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+    background-color: #138496; /* Darker blue on hover */
+}
+
+table {
+    width: 100%; /* Optional: Make the table span the full width */
+    border-collapse: collapse; /* Removes space between table cells */
+    margin: 50px auto 0; /* Adds 20px padding at the top, centers the table horizontally */
+    padding-top: 20px; /* Adds padding to the top of the table content */
+}
+
+th, td {
+    text-align: center; /* Align text to the center horizontally */
+    vertical-align: middle; /* Align content to the center vertically */
+    padding: 10px; /* Adds padding inside table cells */
+    border: 1px solid #ddd; /* Adds a border f
+
+th, td {
+    text-align: center; /* Align text to the center horizontally */
+    vertical-align: middle; /* Align content to the center vertically */
+    padding: 10px; /* Adds padding to table cells */
+    border: 1px solid #ddd; /* Adds a border for better visibility */
+}
+
+thead {
+    background-color: #f4f4f4; /* Optional: Light gray background for header */
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Optional: Zebra striping for rows */
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1; /* Optional: Highlight row on hover */
+}
+/* Delete Button Styling */
+td a.delete-button {
+    background-color: red; /* Red background for delete button */
+    color: white; /* White text */
+    padding: 8px 12px;
+    border-radius: 25px; /* Rounded corners for consistency */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 0.9em;
+}
+
+td a.delete-button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+    color: white; /* Keep text color white on hover */
+}

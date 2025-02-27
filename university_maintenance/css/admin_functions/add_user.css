@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase; /* Capitalize all text */
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes full height of the viewport */
+}
+
+/* Header Styles */
+header {
+    background-color: #002147; /* Deep Blue */
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between items */
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+}
+
+header .logo {
+    height: 65px; /* Adjust height if needed */
+    width: auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em; /* Adjusted font size to match register.css */
+    text-align: center;
+    line-height: 1.2;
+    flex-grow: 1; /* Allow header title to expand */
+}
+
+header .logout-button {
+    background-color: red; /* Red background */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase; /* Ensure button text is uppercase */
+}
+
+header .logout-button:hover {
+    background-color: darkred; /* Darker red on hover */
+}
+
+/* Title Styles */
+h2 {
+    margin-bottom: 40px; /* Increase space between title and form */
+    margin-top: 3px; /* Increase space between title and form */
+}
+
+/* Main Content Styles */
+main {
+    padding: 60px; /* Match register.css */
+    text-align: center;
+    background-color: white; /* White background for main content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 400px; /* Adjusted width for forms */
+    flex: 1; /* Allow main to grow and take available space */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form fields */
+    margin-top: 20px; /* Space above the form */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="tel"],
+form input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%; /* Make the inputs take up the full width */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Button Styles */
+button {
+    display: inline-block;
+    background-color: #004080; /* Blue */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase; /* Ensure button text is uppercase */
+    width: auto; /* Ensures buttons are not as wide as text fields */
+    align-self: center; /* Align button to the center of the form */
+}
+
+button:hover {
+    background-color: #001f5c; /* Darker blue on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #002147; /* Deep Blue */
+    color: white;
+    padding: 22px 20px; /* Adjusted padding for better fit */
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: center;
+    position: relative; /* Change to relative positioning */
+    width: 100%;
+    font-size: 0.9em;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}

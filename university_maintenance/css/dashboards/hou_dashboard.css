@@ -1,0 +1,96 @@
+/* General Styles for HOD Dashboard Page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #002147;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    height: 60px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+body h2 {
+    margin: 20px; /* Top and bottom margin set to 40px, left and right to 20px */
+    padding:; /* Top and bottom padding set to 20px, no padding on left and right */
+    font-size: 1.5em;
+    text-align: center;
+
+
+header .home-button,
+header .logout-button {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #001f5c;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+header .home-button:hover,
+header .logout-button:hover {
+    background-color: #003366;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #002147;
+}
+
+section {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #002147;
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #002147;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #001f5c;
+}

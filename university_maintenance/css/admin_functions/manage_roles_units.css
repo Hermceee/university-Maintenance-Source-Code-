@@ -1,0 +1,258 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #002147; /* Deep Blue */
+    color: white;
+    padding: 20px; /* Adjusted padding for consistency */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px; /* Adjusted height */
+    position: sticky; /* Make header sticky */
+    top: 0; /* Position at the top of the viewport */
+    z-index: 10; /* Ensure it stays above other content */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+header .logo {
+    height: 50px; /* Adjusted height to fit the header */
+    width: auto;
+    cursor: pointer;
+    border-radius: 25px; /* Round corners for the logo */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.2;
+    flex-grow: 1;
+}
+
+header .logout-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded corners */
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+header .logout-button:hover {
+    background-color: #f4f4f4; /* Light grey */
+    color: red; /* Red text on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1500px;
+    flex: 1;
+    width: 95%; /* Adjusted to 90% for proper centering */
+}
+
+/* Management Container Styles */
+.management-container {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    gap: 20px; /* Space between sections */
+}
+
+/* Management Section Styles */
+.management-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.management-section1 {
+    background-color:  #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.management-section h2 {
+    text-align: center; /* Center-align section headers */
+    margin-top: 0; /* Remove top margin if needed */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Form Styles */
+.management-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.management-form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+.management-form button {
+    padding: 10px 20px;
+    background-color: #002147;
+    color: white;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.management-form button:hover {
+    background-color: #001530;
+}
+
+/* Action Button Styling */
+button {
+    border-radius: 25px; /* Rounded corners for all buttons */
+    padding: 10px 20px; /* Consistent padding */
+    cursor: pointer;
+    border: none;
+    font-size: 1em;
+    text-align: center;
+}
+
+button:hover {
+    opacity: 0.9; /* Slightly reduce opacity on hover */
+}
+
+/* Delete Button Styling */
+.delete-button {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #002147; /* Deep Blue */
+    color: white;
+    padding: 10px 20px; /* Adjusted padding to match the previous footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    border-radius: 15px; /* Added rounded corners */
+}
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .management-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .management-form {
+        flex-direction: column;
+    }
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+/* Table Styling (Moved to the bottom as requested) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    overflow-x: auto; /* Handles overflow on small screens */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #002147;
+    color: white;
+    text-transform: uppercase; /* Capitalize table headings */
+}
+
+td {
+    background-color: #f4f4f4;
+	    text-transform: none; /* Ensure table content is not capitalized */
+
+}
+
+thead {
+    background-color: #f4f4f4; /* Optional: Light gray background for header */
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Optional: Zebra striping for rows */
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1; /* Optional: Highlight row on hover */
+}
+
+th, td {
+    text-align: center; /* Align text to the center horizontally */
+    vertical-align: middle; /* Align content to the center vertically */
+    padding: 10px; /* Adds padding inside table cells */
+    border: 1px solid #ddd; /* Adds a border for better visibility */
+}
+
+
+
+

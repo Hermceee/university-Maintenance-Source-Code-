@@ -1,0 +1,323 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes up full height */
+    text-transform: uppercase;
+}
+
+/* Header Styles */
+header {
+    background-color: #002147;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    height: 55px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    flex-grow: 1;
+}
+
+header .logo {
+    height: 50px;
+    width: auto;
+    border-radius: 15px;
+}
+
+/* Menu Button */
+header .Menu {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-transform: uppercase;
+}
+
+header .Menu:hover {
+    background-color: #f4f4f4;
+    color: #002147;
+}
+
+/* Main Content */
+h2 {
+    margin: 10px 0;
+    padding: 0;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Requests Table Styles */
+table {
+    width: 90%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: #002147;
+    color: white;
+    text-transform: uppercase;
+}
+
+table td a {
+    display: inline-block;
+    background-color: #002147;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+table td a:hover {
+    background-color: #0044cc;
+}
+
+/* Approve and Reject Buttons */
+.action-buttons {
+    text-align: center;
+    margin: 20px 0; /* Adds spacing above and below the buttons */
+}
+
+.action-buttons .approve-btn {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.action-buttons .reject-btn {
+    background-color: #dc3545; /* Red color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.action-buttons .approve-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.action-buttons .reject-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #002147;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 0.9em;
+    border-radius: 15px;
+    margin-top: 20px; /* Ensures spacing between footer and buttons */
+    text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header, footer {
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+/* Style the description field to prevent text transformation */
+.normal-case {
+    text-transform: none; /* Ensures the text is in normal case */
+}
+
+/* Comments Section Styles */
+.comments-section {
+    width: 90%;
+    margin: 10px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.comments-section p {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+}
+
+/* Styling for the text area inside the comments section */
+
+.comments-section textarea {
+    width: 100%; /* Ensures it matches the container's width */
+    max-width: 100%; /* Prevents it from exceeding the container's width */
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    color: #333;
+    background-color: #f9f9f9;
+    resize: vertical; /* Allow resizing vertically */
+    box-sizing: border-box;
+    margin: 10px 0; /* Adds spacing around the textarea */
+}
+
+/* Comments Section Styles */
+.comments-section {
+    width: 90%; /* Ensures the form container width */
+    margin: 10px auto; /* Centers the section */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding: 20px;
+    overflow: hidden;
+    text-align: center; /* Centers the button within the container */
+}
+
+
+/* Update Button Styles */
+.comments-section .update-comment-btn {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-top: 15px; /* Adds spacing above the button */
+    transition: background-color 0.3s ease;
+}
+
+.comments-section .update-comment-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* For comments section heading */
+.comments-section h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Button below the comment section */
+.comments-section .update-comment-btn-section {
+    text-align: center;
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Horizontally center the button */
+    align-items: center; /* Vertically center the button */
+    margin-top: 20px;
+    width: 100%; /* Ensures it spans the parent width */
+}
+
+.comments-section .update-comment-btn {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Ensures it behaves like a block for proper centering */
+}
+
+.update-comment-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.comments-section form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align children horizontally */
+    gap: 15px; /* Add space between the textarea and button */
+}
+
+textarea {
+    width: 100%; /* Ensure the textarea spans the full width of the parent container */
+    max-width: 600px; /* Optional: Limit the maximum width */
+}
+
+.update-comment-btn {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+
+
+/* Responsive Design for Comments Section */
+@media (max-width: 600px) {
+    .comments-section {
+        width: 100%;
+        padding: 15px;
+    }
+}
+h3 {
+    margin: 80px 0 10px 0; /* Add 20px margin to the top */
+    padding: 20;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.2;
+}

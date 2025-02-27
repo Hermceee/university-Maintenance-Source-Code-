@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase; /* Capitalize all text */
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes full height of the viewport */
+}
+
+/* Header Styles */
+header {
+    background-color: #002147; /* Deep Blue */
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: sticky; /* Make header sticky */
+    top: 0; /* Position at the top of the viewport */
+    justify-content: space-between; /* Space between logo and header text */
+    height: 55px; /* Adjusted height to match index.css */
+    overflow: hidden;
+    border-radius: 15px; /* Round all corners */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.2;
+    flex-grow: 1; /* Allow header title to expand */
+}
+body h2 {
+    margin: 20px; /* Top and bottom margin set to 40px, left and right to 20px */
+    padding: px 0; /* Top and bottom padding set to 20px, no padding on left and right */
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.2;
+    flex-grow: 1; /* Allow header title to expand */
+}
+
+/* Ensure logo stays aligned to the left */
+header .logo {
+    height: 50px; /* Adjusted height to match index.css */
+    width: auto;
+    border-radius: 15px; /* Round corners for the logo */
+}
+
+/* Header Right Section */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right .profile-icon {
+    margin-right: 15px; /* Space between profile icon and logout button */
+}
+
+.header-right .profile-icon img {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Logout Button Styles */
+header .Menu {
+    background-color: red; /* Red background for logout button */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded corners to match button styles in index.css */
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-transform: uppercase; /* Ensure button text is uppercase */
+    text-align: center; /* Ensure text is centered */
+    font-size: 1em; /* Ensure font size fits well within the button */
+}
+
+header .Menu:hover {
+    background-color: #f4f4f4; /* Lighter grey on hover */
+    color: #002147; /* Deep Blue text on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 40px;
+    text-align: center;
+    background-color: white; /* White background for main content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px;
+    margin: 20px auto; /* Margin for spacing */
+    max-width: 1200px; /* Adjusted width for better layout */
+    flex: 1; /* Allow main to grow and take available space */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center elements horizontally */
+    gap: 15px; /* Space between form fields */
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Section Title */
+form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-align: center; /* Center the text */
+    color: #002147; /* Deep Blue for the title */
+    width: 100%; /* Ensures consistent centering */
+}
+
+/* Form Labels and Inputs */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: left; /* Align labels to the left */
+}
+
+input[type="text"], textarea, select, input[type="file"] {
+    width: 90%; /* Ensure inputs are within the container */
+    max-width: 100%; /* Prevent exceeding container width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px; /* Ensure enough space for description */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #002147;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0044cc;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+
+    header, footer {
+        text-align: center;
+    }
+
+    input[type="text"], textarea, select, input[type="file"] {
+        width: 100%; /* Adjust input width for smaller screens */
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #002147; /* Deep Blue */
+    color: white;
+    padding: 10px 20px; /* Adjusted padding for better fit */
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: center;
+    width: 100%;
+    height: 60px; /* Set height for consistency */
+    font-size: 0.9em;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border-radius: 15px; /* Round all corners */
+    margin-top: 20px; /* Add space between footer and body */
+}

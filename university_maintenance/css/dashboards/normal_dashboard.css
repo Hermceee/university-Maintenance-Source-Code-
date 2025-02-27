@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase; /* Capitalize all text */
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes full height of the viewport */
+}
+
+/* Header Styles */
+header {
+    background-color: #002147; /* Deep Blue */
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between items */
+    height: 55px; /* Adjusted height to match index.css */
+    overflow: hidden;
+    border-radius: 15px; /* Round all corners */
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.2;
+    flex-grow: 1; /* Allow header title to expand */
+}
+
+h2 {
+    margin:-25px 0 40px; /* Top and bottom margin set to 40px, left and right to 20px */
+    padding: 10px 20px; /* Top and bottom padding set to 20px, no padding on left and right */
+    font-size: 1.5em;
+    text-align: center;
+	    border-bottom: 2px solid #ddd; /* Optional bottom border for separation */
+
+
+}
+
+header .logo {
+    height: 50px; /* Adjusted height to match index.css */
+    width: auto;
+    border-radius: 15px; /* Round corners for the logo */
+}
+
+
+/* Header Right Section */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right .profile-icon {
+    margin-right: 15px; /* Space between profile icon and logout button */
+}
+
+.header-right .profile-icon img {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+}
+
+
+
+/* Logout Button Styles */
+header .logout-button {
+    background-color: red; /* Red background for logout button */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded corners to match button styles in index.css */
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+		text-decoration: none;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-transform: uppercase; /* Ensure button text is uppercase */
+    text-align: center; /* Ensure text is centered */
+    font-size: 1em; /* Ensure font size fits well within the button */
+}
+
+header .logout-button:hover {
+    background-color: #f4f4f4; /* Lighter grey on hover */
+    color: #002147; /* Deep Blue text on hover */
+}
+
+
+/* Main Content Styles */
+main {
+    padding: 40px;
+    text-align: center;
+    background-color: white; /* White background for main content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px;
+    margin: 20px auto; /* Margin for spacing */
+    max-width: 1200px; /* Adjusted width for better layout */
+    flex: 1; /* Allow main to grow and take available space */
+}
+
+/* User Functions Section */
+.user-functions {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsive design */
+    justify-content: center; /* Center buttons horizontally */
+    gap: 20px; /* Space between buttons */
+}
+
+.user-functions a.button {
+    display: inline-block;
+    background-color: #004080; /* Blue */
+    color: white;
+    padding: 20px 30px; /* Adjust padding for better button size */
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase; /* Ensure button text is uppercase */
+    text-align: center; /* Center text */
+    font-size: 1em; /* Ensure font size fits well within the button */
+    min-width: 200px; /* Ensure buttons have a minimum width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.user-functions a.button:hover {
+    background-color: #001f5c; /* Darker blue on hover */
+}
+
+footer {
+    background-color: #002147; /* Deep Blue */
+    color: white;
+    padding: 10px 20px; /* Adjusted padding for better fit */
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: center;
+    position: relative; /* Ensure proper positioning */
+    width: 100%;
+    height: 60px; /* Set height for consistency */
+    font-size: 0.9em;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border-radius: 15px; /* Round all corners */
+}

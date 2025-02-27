@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #002147; /* Deep Blue */
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    border-radius: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.2;
+    flex-grow: 1;
+}
+h2 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.2;
+    flex-grow: 1;
+	    margin-bottom: 40px;
+
+}
+header .Menu {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .Menu:hover {
+    background-color: #f4f4f4;
+    color: red;
+}
+
+/* Main Content Styles */
+main {
+    padding: 60px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+/* Filters Section Styles */
+.filters {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+.filters .add-user-button {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+/* Input and Select Box Styling */
+#searchInput, #unitFilter, #roleFilter {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 150px;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+#searchButton, #filterButton, .add-user-button {
+    padding: 10px 20px;
+    background-color: #002147;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+#searchButton:hover, #filterButton:hover, .add-user-button:hover {
+    background-color: #001f5c;
+}
+
+/* Add User Button Styling */
+.add-user-button {
+    background-color: #002147;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 20px auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #002147;
+    color: white;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #f4f4f4;
+}
+
+td a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px 10px;
+    border-radius: 25px;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+td a.edit-button {
+    background-color: #28a745;
+}
+
+td a.edit-button:hover {
+    background-color: #218838;
+}
+
+td a.delete-button {
+    background-color: red;
+}
+
+td a.delete-button:hover {
+    background-color: #cc0000;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #002147;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    font-size: 0.9em;
+    border-radius: 15px;
+}

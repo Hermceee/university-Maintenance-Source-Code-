@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes up full height */
+    text-transform: uppercase;
+}
+
+/* Header Styles */
+header {
+    background-color: #002147;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    height: 55px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    flex-grow: 1;
+}
+
+header .logo {
+    height: 50px;
+    width: auto;
+    border-radius: 15px;
+}
+
+/* Menu Button */
+header .Menu {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-transform: uppercase;
+}
+
+header .Menu:hover {
+    background-color: #f4f4f4;
+    color: #002147;
+}
+
+/* Main Content */
+h2 {
+    margin: 10px 0;
+    padding: 0;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.2;
+}
+
+
+h3 {
+    margin: 180px 0 10px 0; /* Add 20px margin to the top */
+    padding: 20;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Requests Table Styles */
+table {
+    width: 90%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: #002147;
+    color: white;
+    text-transform: uppercase;
+}
+
+table td a {
+    display: inline-block;
+    background-color: #002147;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+table td a:hover {
+    background-color: #0044cc;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #002147;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 0.9em;
+    border-radius: 15px;
+    margin-top: auto; /* Ensures footer sticks to the bottom */
+    text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header, footer {
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+    }
+}

@@ -1,0 +1,273 @@
+/* Import the common styles for header and footer */
+@import url('../../css/dashboards/system_admin_dashboard.css');
+
+/* Main Content Styles */
+main {
+    padding: 40px;
+    text-align: center; /* Center align text */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px; /* Adjust width for better layout */
+    flex: 1;
+}
+
+/* Title Styles */
+h2 {
+    margin-bottom: 40px; /* Increase space between title and form */
+}
+
+/* Form Styles */
+form {
+    display: grid;
+    gap: 15px; /* Space between form elements */
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+    max-width: 100%; /* Ensure form fits within main content */
+    margin: 0 auto; /* Center the form */
+}
+
+/* Label Styles */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input and Select Styles */
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button Styles */
+button {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #001f5c;
+}
+/* Centering and layout adjustments */
+.toggle-section {
+    margin-bottom: 20px; /* Add spacing between toggle and form */
+    text-align: center;
+}
+
+.button-section {
+    text-align: center; /* Center-align the buttons */
+    margin-top: 20px;
+	    border-radius: 25px;
+}
+
+.user-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.user-info-table td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.user-info-table label {
+    font-weight: bold;
+}
+
+
+.user-info-table input[type="text"],
+.user-info-table input[type="email"],
+.user-info-table select {
+    width: 100%; /* Ensure fields stretch to their parent container's width */
+    max-width: 400px; /* Define a maximum width */
+    box-sizing: border-box; /* Includes padding/border in the element's width */
+    overflow: hidden; /* Prevent content from overflowing */
+    text-overflow: ellipsis; /* Truncate long text with ellipsis */
+    padding: 8px; /* Add padding for better appearance */
+    font-size: 14px; /* Ensure readable font size */
+	    border-radius: 5px;
+
+}
+
+/* Button Styling */
+button {
+    background-color: #002147;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #001f5c;
+}
+/* Import the common styles for header and footer */
+@import url('../../css/dashboards/system_admin_dashboard.css');
+
+/* Main Content Styles */
+main {
+    padding: 40px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Title Styles */
+h2 {
+    margin-bottom: 40px;
+}
+
+/* Form Styles */
+form {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Ensure elements stack vertically */
+}
+
+/* Label Styles */
+label {
+    font-weight: bold;
+}
+
+/* Input and Select Styles */
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Table Styling */
+.user-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.user-info-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.user-info-table td:first-child {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-align: right;
+    width: 40%;
+}
+
+.user-info-table td:last-child {
+    text-align: left;
+}
+
+/* Toggle Section */
+.toggle-section {
+    margin-bottom: 20px;
+    text-align: center;
+	    border-radius: 25px;
+
+}
+
+/* Button Section */
+.button-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #001f5c;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+.button-section {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically (optional, if the container height is significant) */
+    margin-top: 20px; /* Add spacing from the table */
+}
+
+
+.button-section button {
+    background-color: #004080; /* Consistent background color */
+    color: white; /* Consistent text color */
+    padding: 10px 20px; /* Comfortable padding */
+    font-size: 16px; /* Readable font size */
+    border: none; /* No border for a cleaner look */
+    border-radius: 25px; /* Rounded edges for consistency */
+    cursor: pointer; /* Pointer cursor for better UX */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.button-section button:hover {
+    background-color: #001f5c; /* Darker shade on hover */
+}
+
+.button-section button:hover {
+    background-color: #0056b3; /* Darken button on hover */
+}
+/* Styling for the left column (labels) */
+.user-info-table td:first-child {
+    background-color: #004080; /* Match the button background */
+    color: white; /* White text for readability */
+    font-weight: bold; /* Emphasize labels */
+    text-align: right; /* Align labels to the right */
+    padding: 10px; /* Consistent padding */
+}
+
+/* Styling for the right column (input fields) */
+.user-info-table td:last-child input[type="text"],
+.user-info-table td:last-child input[type="email"],
+.user-info-table td:last-child select {
+    background-color: #fff; /* Default background color for input fields */
+    color: #333; /* Text color for inputs */
+    padding: 10px; /* Comfortable padding */
+    border: 1px solid #ccc; /* Light border for clarity */
+    border-radius: 5px; /* Rounded corners for input fields */
+}
+
+/* Ensure the select fields and input fields are consistently styled */
+.user-info-table td:last-child select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+    .error-message {
+        color: red;
+        font-weight: bold;
+        margin: 10px 0;
+    }

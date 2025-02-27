@@ -1,0 +1,147 @@
+/* system_admin_dashboard.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase; /* Capitalize all text */
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes full height of the viewport */
+}
+
+/* Header Styles */
+header {
+    background-color: #002147; /* Deep Blue */
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between items */
+    height: 55px; /* Adjusted height to match index.css */
+    overflow: hidden;
+    border-radius: 15px; /* Round all corners */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the header stays on top of other content */
+    padding: 20px; /* Adjust padding if needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for better visibility */
+
+
+}
+
+header .logo {
+    height: 50px; /* Adjusted height to match index.css */
+    width: auto;
+    border-radius: 15px; /* Round corners for the logo */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.2;
+    flex-grow: 1; /* Allow header title to expand */
+}
+
+body h2 {
+    margin: 20px; /* Uniform margin: 20px on all sides */
+    padding: 10px 0 30px 0; /* Top padding reduced to 10px, bottom increased to 30px, no left/right padding */
+    font-size: 1.5em;
+    text-align: center;
+}
+/* Style for h2 elements */
+h2 {
+    font-size: 2em; /* Set font size */
+    color: #002147; /* Deep Blue color to match the theme */
+    text-align: center; /* Center align the text */
+    margin:-25px 0 40px; /* Top and bottom margin set to 40px, left and right to 20px */
+    padding: 10px 20px; /* Reduced top padding, increased bottom padding */
+    font-weight: bold; /* Make the text bold */
+    text-transform: uppercase; /* Convert text to uppercase */
+    border-bottom: 2px solid #ddd; /* Optional bottom border for separation */
+}
+
+
+/* Logout Button Styles */
+header .logout-button {
+    background-color: red; /* Red background for logout button */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded corners to match button styles in index.css */
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+		text-decoration: none;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-transform: uppercase; /* Ensure button text is uppercase */
+    text-align: center; /* Ensure text is centered */
+    font-size: 1em; /* Ensure font size fits well within the button */
+}
+
+header .logout-button:hover {
+    background-color: #f4f4f4; /* Lighter grey on hover */
+    color: #002147; /* Deep Blue text on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 40px;
+    text-align: center;
+    background-color: white; /* White background for main content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px;
+    margin: 20px auto; /* Margin for spacing */
+    max-width: 1200px; /* Adjusted width for better layout */
+    flex: 1; /* Allow main to grow and take available space */
+}
+
+/* Admin Functions Section */
+.admin-functions {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsive design */
+    justify-content: center; /* Center buttons horizontally */
+    gap: 20px; /* Space between buttons */
+}
+
+.admin-functions a.button {
+    display: inline-block;
+    background-color: #004080; /* Blue */
+    color: white;
+    padding: 20px 30px; /* Adjust padding for better button size */
+    text-decoration: none;
+    border-radius: 25px; /* Increased border radius for rounded buttons */
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase; /* Ensure button text is uppercase */
+    text-align: center; /* Center text */
+    font-size: 1em; /* Ensure font size fits well within the button */
+    min-width: 200px; /* Ensure buttons have a minimum width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.admin-functions a.button:hover {
+    background-color: #001f5c; /* Darker blue on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #002147; /* Deep Blue */
+    color: white;
+    padding: 10px 20px; /* Adjusted padding for better fit */
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: center;
+    position: relative; /* Ensure proper positioning */
+    width: 100%;
+    height: 60px; /* Set height for consistency */
+    font-size: 0.9em;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border-radius: 15px; /* Round all corners */
+}
